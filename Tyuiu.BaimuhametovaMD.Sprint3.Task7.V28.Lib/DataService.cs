@@ -11,7 +11,7 @@ namespace Tyuiu.BaimuhametovaMD.Sprint3.Task7.V28.Lib
             for (int i = startValue; i <= stopValue; i++)
             {
                 if (0 == (i + 2.5)) result[index] = 0;
-                else result[index] = Math.Round(Math.Cos(2 * i) + (Math.Sin(i) / (i + 2.5)) + 2 * i);
+                else result[index] = Math.Round((Math.Cos(2 * i) + (Math.Sin(i) / (2.5 + i)) + 2 * i), 2);
                 index++;
             }
             return result;
