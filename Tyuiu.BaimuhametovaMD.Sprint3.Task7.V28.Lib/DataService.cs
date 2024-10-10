@@ -6,7 +6,15 @@ namespace Tyuiu.BaimuhametovaMD.Sprint3.Task7.V28.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            throw new NotImplementedException();
+            double[] result = new double[11];
+            int index = 0;
+            for (int i = startValue; i <= stopValue; i++)
+            {
+                if (0 == (i + 2.5)) result[index] = 0;
+                else result[index] = Math.Round(Math.Cos(2 * i) + (Math.Sin(i) / (i + 2.5)) + 2 * i);
+                index++;
+            }
+            return result;
         }
     }
 }
